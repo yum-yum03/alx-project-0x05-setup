@@ -14,8 +14,10 @@ const Home: React.FC = () => {
 
 
   const handleGenerateImage = async () => {
-    console.log("Generating Images");
+    console.log("Generating Image")
+    console.log(process.env.NEXT_PUBLIC_GPT_API_KEY)
   };
+
 
   return (
     <div className="flex flex-col items-center min-h-screen bg-gray-100 p-4">
